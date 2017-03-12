@@ -1,6 +1,7 @@
 <?php 
-/**
-*The template for displaying the About page
+/*
+*Template for displaying the About page
+*Description: template for displaying the About page
 *
 *
 *@package WordPress
@@ -28,11 +29,11 @@ get_header(); ?>
             $image_2 = get_field('image_2');
             $image_3 = get_field('image_3');
             $image_4 = get_field('image_4');
-            $size = "full";
-        ?>
+            $size = "full"; ?>
         
         <div class="about-services">
             <h3>Our Services</h3>
+            <h1>Testing 1, Testing 2, Testing 3 Hi Sarah!</h1>
             <br/>
             <p>We take pride in our clients and the content we create for them.</p>
             <p>Here is a brief overview of our offered services.</p>
@@ -85,17 +86,17 @@ get_header(); ?>
             
             <div class="about-image-4">
                 <?php if($image_4) { ?>
-                <?php echo wp_get_attachment_image( $image_4, $size ); ?>
-                ?php } ?>
+				<?php echo wp_get_attachment_image( $image_4, $size ); ?>
+				<?php } ?>
             </div>
-    </div>
+        </div>
     
     <div class="work-with-us">
         <h2 class="interested">Interested in working with us?</h2>
         <a class="contact-button" href="<?php echo home_url(); ?>/contact-us">Contact Us</a>
-    </div>   
-    <?php endwhile; //end of the loop. ?>
-</div>
-</section>
-
+    </div> 
+    <?php endwhile; // end of the loop. ?>
+        
+    </div><!-- .container -->
+</section><!-- .about-page -->
 <?php get_footer(); ?>
