@@ -18,7 +18,7 @@
 }
 
 .home-page {
-    background: url('../img/taxi-photo.jpg') no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    background: url('img/taxi-photo.jpg') no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
 
 #masthead {
@@ -281,7 +281,7 @@ h2.replay_contact {
 
 /* About Page */
 .about-page {
-    background: url('../img/taxi-photo.jpg') no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    background: url('img/taxi-photo.jpg') no-repeat scroll left center / cover rgba(0, 0, 0, 0);
     height: 150px;
     margin: 0 0 80px;
     padding: 100px 0;

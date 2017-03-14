@@ -33,7 +33,6 @@ get_header(); ?>
         
         <div class="about-services">
             <h3>Our Services</h3>
-            <h1>Testing 1, Testing 2, Testing 3 Hi Sarah!</h1>
             <br/>
             <p>We take pride in our clients and the content we create for them.</p>
             <p>Here is a brief overview of our offered services.</p>
@@ -54,12 +53,6 @@ get_header(); ?>
             <div class="influencer-mapping">
                 <h2>Influencer Mapping</h2>
                 <?php echo $description_2; ?>
-            </div>
-            
-            <div class="about-image-2">
-                <?php if($image_2) { ?>
-                <?php echo wp_get_attachment_image( $image_2, $size ); ?>
-                <?php } ?>
             </div>
             
             <div class="about-image-2">
