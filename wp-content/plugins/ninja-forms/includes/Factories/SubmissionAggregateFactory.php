@@ -21,7 +21,11 @@ class SubmissionAggregateFactory
     {
         $submissionAggregate = new SubmissionAggregate();
 
-        $submissionAggregate->addDataSource($this->makeCalderaDataSource());
+        if($this->cfTablesExist()){
+
+            $submissionAggregate->addDataSource($this->makeCalderaDataSource());
+        }
+        
         $submissionAggregate->addDataSource($this->makeCptSubmissionDataSource());
    
         return $submissionAggregate;
@@ -61,4 +65,26 @@ class SubmissionAggregateFactory
         return new CptSubmissionDataSource();
     }
 
+    /**
+     * Check that both CF entry and values tables exist
+     *
+     * @return boolean
+     */
+    protected function cfTablesExist( ): bool
+    {
+        global $wpdb;
+
+        $return = false;
+        $entriesTable = $wpdb->prefix . 'cf_form_entries';
+        $valuesTable = $wpdb->prefix . 'cf_form_entry_values';
+
+        $entriesQuery = $wpdb->prepare( 'SHOW TABLES LIKE %s', $wpdb->esc_like( $entriesTable ) );
+        $valuesQuery = $wpdb->prepare( 'SHOW TABLES LIKE %s', $wpdb->esc_like( $valuesTable ) );
+        
+        if (  $wpdb->get_var( $entriesQuery ) == $entriesTable &&  $wpdb->get_var( $valuesQuery ) == $valuesTable ) {
+            $return = true;
+        }
+
+        return $return;
+    }
 }
