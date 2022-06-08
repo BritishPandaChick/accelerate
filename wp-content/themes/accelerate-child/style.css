@@ -5,7 +5,7 @@
  Author:       Sarah Bartley
  Author URI:   http://example.com
  Template:     accelerate-theme
- Version:      1.0.0
+ Version:      2.0.0
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  accelerate-theme-child
 */
@@ -18,7 +18,7 @@
 }
 
 .home-page {
-    background: url('img/taxi-photo.jpg') no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    background: url('img/taxi-photo.jpg') no-repeat scroll right center / cover rgba(0, 0, 0, 0);
 }
 
 #masthead {
@@ -28,6 +28,9 @@
 .button {
     background: none repeat scroll 0 0 #45ac9d;
 }
+
+/*== Blog Posts Styles ==*/ 
+.blog-post {}
 
 h1 {
     font-weight: bold;
