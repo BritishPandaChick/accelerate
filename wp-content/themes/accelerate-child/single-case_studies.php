@@ -11,6 +11,7 @@ get_header(); ?>
 
 	<div id="primary" class="site-content">
 		<div id="main-content" role="main">
+		
 			<?php while ( have_posts() ) : the_post(); 
 				$services = get_field('services');
 				$client = get_field('client');
@@ -18,12 +19,13 @@ get_header(); ?>
 				$image_1 = get_field('image_1');
 				$image_2 = get_field('image_2');
 				$image_3 = get_field('image_3');
-				$size = "full"; ?>
+				$size = "full"; 
+			?>
 								 
 				<article class="case-study clearfix">
 					<aside class="case-study-sidebar">
 						<h2><?php the_title(); ?></h2>
-						<h4><?php echo $services; ?></h4>
+						<h4><span><?php echo $services; ?></span></h4>
 						<h4>Client: <?php echo $client; ?></h4>
 						
 						<?php the_content(); ?>
@@ -48,5 +50,11 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
+	
+	<nav id="navigation" class="container">
+		<div class="left">
+			<a href="<?php echo site_url('/case-studies/') ?>">&larr; <span>Back to Work</span></a>
+		</div>
+	</nav>
 
 <?php get_footer(); ?>

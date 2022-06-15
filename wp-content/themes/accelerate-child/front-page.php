@@ -14,59 +14,54 @@
 
 get_header(); ?>
 
-<section class="home-page">
-	<div class="site-content">
+<div id="primary" class="home-page hero-content">
+	<div class="main-content" role="main">
 		<?php while ( have_posts() ) : the_post(); ?>
-			<div class='homepage-hero'>
-				<?php the_content(); ?>
-				<a class="button" href="<?php echo home_url(); ?>/blog">View Our Work</a>
-			</div>
+			<?php the_content(); ?>
+				<a class="button" href="<?php echo site_url('/blog/'); ?>">View Our Work</a>			
 		<?php endwhile; // end of the loop. ?>
 	</div><!-- .container -->
-</section><!-- .home-page -->
+</div><!-- .home-page -->
 
+<!-- Featured Work -->
 <section class="featured-work">
-    <div class="site-content">
+    <div class="site-content clearfix">
         <h4>Featured Work</h4>
-        
         <ul class="homepage-featured-work">
         <?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
-        <?php while (have_posts() ) : the_post();
-            $image_1 = get_field("image_1");
-            $size = "medium";        
-        ?>   
-            <li>
-            <figure>
-                <?php echo wp_get_attachment_image($image_1, $size); ?>
-            </figure>
-        
-            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+			<!--- the loop -->
+			<?php while (have_posts() ) : the_post();
+				$image_1 = get_field("image_1");
+				$size = "medium";        
+			?>   
+            <li class="individual-featured-work">
+				<a href="<?php the_permalink(); ?>">
+					<figure>
+						<?php echo wp_get_attachment_image($image_1, $size); ?>
+					</figure>				
+					<h3><?php the_title(); ?></h3>
+				</a>
             </li>
-        <?php endwhile; ?>
-        <?php wp_reset_query(); ?>
+			<?php endwhile; // end of the loop ?>
+			<?php wp_reset_query(); // resets altered query back to the original?>
         </ul>
     </div>    
 </section>
 
+<!-- Recent Posts -->
 <section class="recent-posts">
     <div class="site-content">
         <div class="blog-post">
             <h4>From the Blog</h4>
             <?php query_posts('posts_per_page=1'); ?>
-            <?php while (have_posts() ) : the_post(); ?>
-                <h2><?php the_title(); ?></h2>
-                <?php the_excerpt(); ?>
-            <a class="read-more-link" href="<?php the_permalink(); ?>">Read More<span>&rsqauo;</span></a>
-            <?php endwhile; ?>
-            <?php wp_reset_query(); ?>
+				<!-- The loop -->
+				<?php while (have_posts() ) : the_post(); ?>
+					<h3><?php the_title(); ?></h3>
+					<?php the_excerpt(); ?>
+				<?php endwhile; //end of the loop ?>
+            <?php wp_reset_query(); // resets the altered query back to the original ?>
         </div>        
     </div>
 </section>
-
-<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-<div id="secondary" class="widget-area" role="complementary">
-    <?php dynamic_sidebar( 'sidebar-2' ); ?>
-</div>
-<?php endif; ?>
 
 <?php get_footer(); ?>
