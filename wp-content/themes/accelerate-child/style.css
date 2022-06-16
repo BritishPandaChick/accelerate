@@ -72,7 +72,7 @@
     text-transform: uppercase;
 }
 
-/* Case Studies */
+/*== Case Studies ==*/
 .case-study {
 	clear: both;
 }
@@ -104,9 +104,9 @@ div.case-study-images img {
 	border: 1px solid #dddddd;
 }
 
-/* Media Queries */ 
+/*=== Media Queries ===*/ 
 @media (min-width: 768px) {
-	.featured-work, .site-content {
+	.featured-work .site-content {
 		margin: auto auto 3em;
 	}
 	

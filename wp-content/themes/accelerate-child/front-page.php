@@ -18,7 +18,7 @@ get_header(); ?>
 	<div class="main-content" role="main">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php the_content(); ?>
-				<a class="button" href="<?php echo site_url('/blog/'); ?>">View Our Work</a>			
+				<a class="button" href="<?php echo site_url('/blog/') ?>">View Our Work</a>			
 		<?php endwhile; // end of the loop. ?>
 	</div><!-- .container -->
 </div><!-- .home-page -->
@@ -30,7 +30,7 @@ get_header(); ?>
         <ul class="homepage-featured-work">
         <?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
 			<!--- the loop -->
-			<?php while (have_posts() ) : the_post();
+			<?php while ( have_posts() ) : the_post();
 				$image_1 = get_field("image_1");
 				$size = "medium";        
 			?>   
@@ -55,7 +55,7 @@ get_header(); ?>
             <h4>From the Blog</h4>
             <?php query_posts('posts_per_page=1'); ?>
 				<!-- The loop -->
-				<?php while (have_posts() ) : the_post(); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 					<h3><?php the_title(); ?></h3>
 					<?php the_excerpt(); ?>
 				<?php endwhile; //end of the loop ?>
