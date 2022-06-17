@@ -12,6 +12,9 @@
 
 .home-page {
     background: url('img/taxi-photo.jpg') no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+	height: 440px;
+	margin: 0 0 80px;
+	padding: 100px 0;
 }
 
 #masthead {
@@ -23,7 +26,7 @@
 }
 
 /*== Featured work == */ 
-.featured-work, .site-content {
+.featured-work .site-content {
 	margin: 6em auto;
 }
 
