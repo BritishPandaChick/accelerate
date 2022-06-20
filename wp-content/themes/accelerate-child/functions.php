@@ -17,12 +17,14 @@ function accelerate_child_scripts(){
 }
 add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' ); 
 
+//Custom post types function 
 function create_custom_post_types() {
+	//create a case study custom post type 
     register_post_type( 'case_studies',
         array(
             'labels' => array(
-                'name' => _( 'Case Studies' ),
-            'singular_name' => _( 'Case Study' )
+                'name' => __( 'Case Studies' ),
+            'singular_name' => __( 'Case Study' )
 			),
 			'public' => true,
 			'has_archive' => true,
@@ -31,4 +33,5 @@ function create_custom_post_types() {
 	);
 }
 
+//hook custome post type function into theme
 add_action( 'init', 'create_custom_post_types' );
