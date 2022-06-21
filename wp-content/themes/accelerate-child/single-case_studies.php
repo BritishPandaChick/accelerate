@@ -10,7 +10,7 @@
 get_header(); ?>
 
 <div id="primary" class="site-content">
-	<div id="main-content" role="main">
+	<div id="content" role="main">
 		
 		<?php while ( have_posts() ) : the_post(); 
 			$services = get_field('services');
@@ -22,11 +22,11 @@ get_header(); ?>
 			$size = "full"; 
 		?>
 								 
-			<article class="case-study clearfix">
+			<article class="case-study">
 				<aside class="case-study-sidebar">
 					<h2><?php the_title(); ?></h2>
-					<h4><span><?php echo $services; ?></span></h4>
-					<h4>Client: <?php echo $client; ?></h4>
+					<h5><?php echo $services; ?></h5>
+					<h6>Client: <?php echo $client; ?></h6>
 							
 					<?php the_content(); ?>
 							
