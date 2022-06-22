@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-<div id="primary" class="home-page hero-content">
+<section class="home-page">
 	<div class="site-content">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<div class="homepage-hero">
@@ -23,12 +23,13 @@ get_header(); ?>
 			</div>
 		<?php endwhile; // end of the loop. ?>
 	</div><!-- .container -->
-</div><!-- .home-page -->
+</section><!-- .home-page -->
 
 <!-- Featured Work -->
 <section class="featured-work">
     <div class="site-content">
         <h4>Featured Work</h4>
+		
         <ul class="homepage-featured-work">
         <?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
 			<!--- the loop -->
