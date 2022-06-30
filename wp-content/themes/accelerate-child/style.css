@@ -10,61 +10,25 @@
  Text Domain:  accelerate-theme-child
 */
 
-@import url("../accelerate-theme/style.css");
-
 .home-page {
-    background: url('img/taxi-photo.jpg') no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    background: url('img/taxi-photo.jpg') no-repeat scroll right center / cover rgba(0, 0, 0, 0);
 }
 
 #masthead {
-    background: none repeat scroll 0 0 #45ac9d;
+	background: none repeat scroll 0 0 #45ac9d;
 }
 
 .button {
-    background: none repeat scroll 0 0 #45ac9d;
+	background: none repeat scroll 0 0 #45ac9d;
 }
 
-/*== Featured work == */ 
-.featured-work .site-content {
-	margin: 6em auto;
-}
-
-.featured-work h4 {
-	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
-	text-align: center;
-	text-transform: uppercase;
-	margin-bottom: 2.25em;
-}
-
-.homepage-featured-work {
-	list-style: none;
-	margin: 0 auto;
-	padding: 0;
-	text-align: center;
-	width: 100%;
-}
-
-.individual-featured-work {
+/*== Blog Post Styles ==*/ 
+.blog-post {
+	width: 50%;
+	float: left;
 	margin-bottom: 2em;
 }
 
-.individual-featured-work a {
-	display: block;
-}
-
-.individual-featured-work h3 {
-	font: 500 1em/1.75 'Open Sans', Arial, sans-serif;
-}
-
-/*== Footer Styles ===*/
-.social-media-menu li {
-	float: left;
-	margin: 0 5px;
-	text-indent: -10000px;
-	list-style-type: none;
-}
-
-/*== Blog Posts Styles ==*/ 
 .blog-post h4 {
 	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
 	color: #a6a6a6;
@@ -73,48 +37,23 @@
 }
 
 .blog-post h3 {
-	font-size: 1.5em;
+	font-size; 1.5em;
 }
 
 .read-more-link {
-	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+	font-family: 'Montserrat';
+	font-weight: 700;
 	color: #45ac9d;
 	text-transform: uppercase;
 }
 
-/*== Case Studies ==*/
-article.case-study {
-	clear: both;
-	margin: 40px 0 0;
-}
-
+/* === Case Studies ===*/
 aside.case-study-sidebar {
 	float: left;
-	width: 314px;
-	margin: 0 40px 0 0;
-}
-
-aside.case-study-sidebar h5 {
-	color: #999;
-	font-size: 16px;
-	font-weight: normal;
-	line-height: 1.33333;
-	margin: 0 0 12px;
-}
-
-aside.case-study-sidebar h6 {
-	font-size: 16px;
-	font-weight: normal;
-	line-height: 1.5;
-	margin: 0 0 50px;
+	width: 300px;
 }
 
 div.case-study-images {
 	float: left;
 	width: 606px;
-}
-
-div.case-study-images img {
-	border: 1px solid #dddddd;
-	margin-bottom: 100px;
 }

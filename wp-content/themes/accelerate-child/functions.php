@@ -18,13 +18,12 @@ function accelerate_child_scripts(){
 
 add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
 
-//Custom post types function 
+/* Add custom post type using custom function and register_post_type() */
 function create_custom_post_types() {
-	//create a case study custom post type 
-    register_post_type( 'case_studies',
-        array(
-            'labels' => array(
-                'name' => __( 'Case Studies' ),
+	register_post_type( 'case_studies',
+		array(
+			'labels' => array(
+				'name' => __( 'Case Studies' ),
 				'singular_name' => __( 'Case Study' )
 			),
 			'public' => true,
