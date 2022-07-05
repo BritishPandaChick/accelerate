@@ -41,58 +41,57 @@
 }
 
 .read-more-link {
-	font-family: 'Montserrat';
-	font-weight: 700;
+	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
 	color: #45ac9d;
 	text-transform: uppercase;
 }
 
 /* === Case Studies ===*/
-aside.case-study-sidebar {
-	float: left;
-	margin: 0 50px 0 0;
-	width: 30%;
+.case-study {
+    clear: both;
 }
 
-aside.case-study-sidebar h2 {
-	font-size: 1.5em;
-	font-weight: normal;
-	line-height: 1.4em;
-	margin: 20px 0 5px;
+.case-study h2 {
+    font: 700 1.5em/1.5 'Open Sans Semibold';
 }
 
-aside.case-study-sidebar h6 {
-	color: rgba(0,0,0,.5);
-	font-size: .8em;
-	font-weight: normal;
-	margin: 0 0 5px;
+.case-study h4 {
+    font: 400 .875em/1.25 'Open Sans';
+    margin: 1em 0;
 }
 
-aside.case-study-sidebar h5 {
-	font-size: .9em;
-	font-weight: normal;
-	margin: 0;
-	text-transform: none;
+.case-study h4 span {
+    color: #878787;
 }
 
-aside.case-study-sidebar a {
-	font-weight: bold;
-}
-
-article.case-study {
-	clear: both;
-	border: 1px solid red;
-	padding: 50px;
+.case-study-sidebar p {
+    margin: 2em 0;
 }
 
 div.case-study-images {
-	float: left;
-	padding-top: 30px;
-	width: 60%;
+	margin-top: 3em;
 }
 
 div.case-study-images img {
-	display: block;
-	margin-bottom: 50px;
-	border: 1px solid #ddd;
+    width: 100%;
+	margin-bottom: 3.125em;
+	border: 1px solid #dddddd;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .blog-post {
+    	width: 50%;
+    	float: left;
+        margin-bottom: 2em;
+    }
+    aside.case-study-sidebar {
+        float: left;
+        width: 34%;
+        margin: 0 6% 0 0;
+    }
+    div.case-study-images {
+        float: left;
+        width: 60%;
+    }
 }
