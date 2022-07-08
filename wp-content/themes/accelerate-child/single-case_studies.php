@@ -24,26 +24,24 @@ get_header(); ?>
 				<article class="case-study clearfix">
 				  <aside class="case-study-sidebar">
 						  <h2><?php the_title(); ?></h2>
-						  <h4><?php echo $services; ?></h4>
-						  <h4><span>Client: <?php echo $client; ?></span></h4>
+						  <h4><span><?php echo $services; ?></span></h4>
+						  <h4>Client: <?php echo $client; ?></h4>
 						  
 						  <?php the_content(); ?>
 						  
-						  <p class="read-more-link"><strong><a href="<?php echo $link; ?>">Visit Live Site &rsaquo;</a></strong></p>
+						  <p class="read-more-link"><a href="<?php echo $link; ?>">Visit Live Site &rsaquo;</a></p>
 				  </aside>
 
 				  <div class="case-study-images">
-					<?php if ($image_1) { 
+					<?php if($image_1) {
 						echo wp_get_attachment_image( $image_1, $size );
 					} ?>
-					
-					<?php if ($image_2) { 
+					<?php if($image_2) {
 						echo wp_get_attachment_image( $image_2, $size );
 					} ?>
-					
-					<?php if ($image_3) {
+					<?php if($image_3) {
 						echo wp_get_attachment_image( $image_3, $size );
-					} ?>
+					} ?>					
 				  </div>
 				</article>
 				

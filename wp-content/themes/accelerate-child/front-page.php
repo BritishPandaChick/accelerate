@@ -49,6 +49,23 @@ get_header(); ?>
     </div>    
 </section>
 
+<!-- Featured Work -->
+<section class="featured-work">
+	<div class="site-content">
+		<h4>Featured Work</h4>
+		<?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
+			<!-- The loop -->
+			<?php while ( have_posts() ) : the_post(); ?>
+				<h3><a href="<?php the_permalink(); ?>" class="read-more-link">
+					<?php the_title(); ?>
+				</a></h3>
+				<?php the_excerpt(); ?>
+			<?php endwhile; //end of the loop ?>
+         <?php wp_reset_query(); // resets the altered query back to the original ?>
+		
+	</div>
+</section>
+
 <!-- Recent Posts -->
 <section class="recent-posts">
     <div class="site-content">
