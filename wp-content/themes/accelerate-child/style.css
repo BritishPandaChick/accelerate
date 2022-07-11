@@ -55,12 +55,6 @@
 }
 
 /*== Blog Post Styles ==*/ 
-.blog-post {
-	width: 50%;
-	float: left;
-	margin-bottom: 2em;
-}
-
 .blog-post h4 {
 	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
 	color: #a6a6a6;
