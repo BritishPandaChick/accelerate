@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<div id="primary" class="site-content">
-		<div id="content" role="main">
+		<div class="main-content" role="main">
 			<?php while ( have_posts() ) : the_post();
 				$services = get_field('services');
 				$client = get_field('client');
@@ -33,20 +33,19 @@ get_header(); ?>
 				  </aside>
 
 				  <div class="case-study-images">
-					<?php if($image_1) { ?>
-						<?php echo wp_get_attachment_image( $image_1, $size );
+					<?php if($image_1) { 
+						echo wp_get_attachment_image( $image_1, $size );
 					} ?>
-					<?php if($image_2) { ?>
-						<?php echo wp_get_attachment_image( $image_2, $size );
+					<?php if($image_2) { 
+						echo wp_get_attachment_image( $image_2, $size );
 					} ?>
-					<?php if($image_3) { ?>
-						<?php echo wp_get_attachment_image( $image_3, $size );
+					<?php if($image_3) { 
+						echo wp_get_attachment_image( $image_3, $size );
 					} ?>					
 				  </div>
 				</article>
 				
 			<?php endwhile; // end of the loop. ?>
-
 		</div><!-- #content -->
 	</div><!-- #primary -->
 	

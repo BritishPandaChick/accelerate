@@ -100,6 +100,7 @@ div.case-study-images {
 
 div.case-study-images img {
     width: 100%;
+	height: auto;
 	margin-bottom: 3.125em;
 	border: 1px solid #dddddd;
 }
