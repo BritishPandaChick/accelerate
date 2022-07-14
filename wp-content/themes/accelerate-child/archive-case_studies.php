@@ -18,7 +18,7 @@ get_header(); ?>
             $size = "full"; 
 		?>
         
-			<article class="case-study">
+			<article class="case-study clearfix">
 				<aside class="case-study-sidebar">
 					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 					<h4><?php echo $services; ?></h4>
@@ -31,8 +31,8 @@ get_header(); ?>
 				<div class="case-study-images">
 					<a href="<?php the_permalink(); ?>">
 						<?php if($image_1) { ?>
-							<?php echo wp_get_attachment_image( $image_1, $size );
-						} ?>
+							<img src="<?php echo $image_1; ?>" />
+						<?php } ?>
 					</a>
 				</div>        
 			</article>
