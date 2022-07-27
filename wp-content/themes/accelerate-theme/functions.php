@@ -40,7 +40,7 @@ function accelerate_setup() {
     register_nav_menus( array (
         'top-nav' => __( 'Top Nav', 'accelerate' ),
         'social-media'  => __( 'Social Media Nav', 'accelerate' ),
-    ) );
+    ));
 }
 add_action( 'after_setup_theme', 'accelerate_setup' );
 
