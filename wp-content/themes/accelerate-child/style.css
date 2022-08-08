@@ -105,6 +105,21 @@ div.case-study-images img {
 	border: 1px solid #dddddd;
 }
 
+/* Contact Us */ 
+#nf-field-1-container, #nf-field-2-container {
+	clear: none;
+	float: left;
+	width: 48%;
+}
+
+#nf-field-2-container, #nf-field-4-container {
+	float: right;
+}
+
+.nf-form-fields-required, .ninja-forms-req-symbol {
+	display: none;
+}
+
 /* Footer */ 
 div.menu-social-media-nav-container ul li {
 	list-style-type: none;
