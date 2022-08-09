@@ -92,4 +92,5 @@ get_header(); ?>
         
     </div><!-- .container -->
 </section><!-- .about-page -->
+</section>
 <?php get_footer(); ?>
