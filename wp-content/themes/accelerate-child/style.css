@@ -106,6 +106,82 @@ div.case-study-images img {
 }
 
 /* About */
+.about-adjust {
+	margin-bottom: 0;
+}
+
+.about-header-text {
+	color: white;
+	text-align: center;
+	line-height: 2;
+	width: 40px;
+	font-weight: 600;
+	margin: 0 auto;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.center-text h2 {
+	text-transform: uppercase;
+	margin-top: 0;
+}
+
+.flex-wrapper {
+	display: flex;
+}
+
+.service-loop-wrap {
+	margin-top: 60px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.flex-wrapper:nth-child(even) .service-loop-wrap {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.service-img {
+	width: 30%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.flex-wrapper:nth-child(even) .service-img {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.service-text {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+}
+
+.work-with-us {
+	border-top: 1px solid #bfbfbf;
+	margin-top: 50px;
+	padding: 30px 150px 0 150px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.work-with-us h2 {
+	margin: 0;
+}
+
+.service-text h2 {
+	margin-top: 0;
+}
+
+.clearfix-about {
+	clear: both;
+}
+
 .about-page {
     background: url('img/taxi-photo.jpg') no-repeat scroll left center / cover rgba(0, 0, 0, 0);
     height: 150px;
@@ -212,6 +288,7 @@ div.case-study-images img {
     margin-bottom: 100px;
     float: left;
 }
+
 
 
 /* Contact Us */ 
