@@ -107,189 +107,106 @@ div.case-study-images img {
 
 /* About */
 .about-adjust {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .about-header-text {
-	color: white;
-	text-align: center;
-	line-height: 2;
-	width: 40px;
-	font-weight: 600;
-	margin: 0 auto;
+  color: white;
+  text-align: center;
+  line-height: 2;
+  width: 40%;
+  font-weight: 600;
+  margin: 0 auto;
 }
 
 .center-text {
-	text-align: center;
+  text-align: center;
 }
 
 .center-text h2 {
-	text-transform: uppercase;
-	margin-top: 0;
+  text-transform: uppercase;
+  margin-top: 0;
 }
 
 .flex-wrapper {
-	display: flex;
+  display: flex;
 }
 
 .service-loop-wrap {
-	margin-top: 60px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .flex-wrapper:nth-child(even) .service-loop-wrap {
-	display: flex;
-	flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .service-img {
-	width: 30%;
-	display: flex;
-	justify-content: flex-end;
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .flex-wrapper:nth-child(even) .service-img {
-	display: flex;
-	justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .service-text {
-	width: 70%;
-	display: flex;
-	flex-direction: column;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
 }
 
 .work-with-us {
-	border-top: 1px solid #bfbfbf;
-	margin-top: 50px;
-	padding: 30px 150px 0 150px;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
+  border-top: 1px solid #bfbfbf;
+  margin-top: 50px;
+  padding: 30px 150px 0 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .work-with-us h2 {
-	margin: 0;
+  margin: 0;
 }
 
 .service-text h2 {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 .clearfix-about {
-	clear: both;
+  clear: both;
 }
 
-.about-page {
-    background: url('img/taxi-photo.jpg') no-repeat scroll left center / cover rgba(0, 0, 0, 0);
-    height: 150px;
-    margin: 0 0 80px;
-    padding: 100px 0;
+/* 404 page */
+.block404 {
+  height: 700px;
+  width: 900px;
+  background-image: url("img/bgtile.75x.png");
+  background-repeat: repeat;
 }
-
-.work-with-us {
-    border-top: dotted 1px #bfbfbf;
+.image404-container {
+  background-image: url("img/smarty-03.png");
+  width: 645px;
+  height: 600px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  margin-top: 40px;
 }
-
-.interested {
-    width: 50%;
-    float: left;
-    margin: 60px 0 0 0;
+.special-font {
+  font-family: "Comfortaa", "Open Sans", sans-serif;
+  font-size: 28px;
+  padding: 15px 20px;
 }
-
-.contact-button {
-    background: #45ac9d;
-    color: #fff !important;
-    font: bold 1.17em/2.77 'Montserrat', "Open Sans", Arial, sans-serif;
-    display: inline-block;
-    height: 55px;
-    min-width: 250px;
-    padding: 0 20px;
-    text-align: center;
-    text-decoration: none;
-    float: right;
-    margin-bottom: 50px;
-    margin-top: 50px;
+.button-right {
+  float: right;
+  margin: 15px;
 }
-
-.about-co {
-    color: #ffffff;
-    font-weight: 500;
-    line-height: 1.5em;
-    font-size: 1.2em;
-    width: 50%;
-    float: right;
-    margin-right: 325px;
-    margin-bottom: 130px;
-}
-
-.about-services {
-    text-align: center;
-    margin-bottom: 50px;
-    line-height: .5em;
-}
-
-.what-we-do {
-    overflow: auto;
-}
-
-.about-image-1 {
-    display: inline-block;
-    float: left;
-}
-
-.content-strategy {
-    display: inline-block;
-    width: 70%;
-    margin-left: 40px;
-    margin-bottom: 30px;
-    float: right;
-}
-
-.about-image-2 {
-    display: inline-block;
-    float: right;
-    margin-bottom: 40px;
-}
-
-.influencer-mapping {
-    display: inline-block;
-    width: 70%;
-    margin-right: 40px;
-    margin-bottom: 30px;
-    float: left;
-}
-
-.about-image-3 {
-    display: inline-block;
-    float: left;
-    clear: both;
-}
-
-.social-media-strategy {
-    display: inline-block;
-    width: 70%;
-    margin-left: 40px;
-    margin-bottom: 30px;
-    float: right;
-}
-
-.about-image-4 {
-    display: inline-block;
-    float: right;
-}
-
-.design-development {
-    display: inline-block;
-    width: 70%;
-    margin-right: 40px;
-    margin-bottom: 100px;
-    float: left;
-}
-
-
 
 /* Contact Us */ 
 #nf-field-1-container, #nf-field-2-container {
