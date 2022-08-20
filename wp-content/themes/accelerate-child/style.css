@@ -110,66 +110,47 @@ div.case-study-images img {
     padding: 0 0 2em 0;
 }
 
-/* I have copied this code from the homepage styles only with different padding */
 .about-header {
-    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
-    background-position: left;
-    height: auto;
-    padding: 3em 0 4em 0;
+	background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+	background-position: left;
+	height: auto;
+	padding: 3em 0 4em 0;
 }
 
-/* I have added flex to position the h3 */
 .about-header .wp-block-group__inner-container {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .about-header h3 {
-    color: #fff;
-    font-family: 'Open Sans';
-    font-size: 1.4em;
-    font-weight: 600;
-    margin: 0;
-    width: 80%;
+	color: #fff;
+	font-family: 'Open Sans';
+	font-size: 1.4em;
+	font-weight: 600;
+	margin: 0;
+	width: 80%;
 	text-align: center;
 }
 
 .about-content {
-    width: 90%;
-    max-width: 960px;
-    margin: 0 auto;
-    text-align: center;
+	width: 90%;
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .about-intro {
-    margin: 4em 0 3em 0;
+	margin: 4em 0 3em 0;
 }
 
-/* The same styles as the Featured work title (h4) on the front page */
 .about-intro h4 {
-    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0  0 1em 0;
+	margin: 4em 0 3em 0;
 }
 
-.about-intro p {
-    margin: 0 0 1em 0;
+.about-intro h4 {
+	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
 }
 
-.about-intro a {
-	color: #3b3b3b;
-	font-weight: 700;
-	text-decoration: underline;
-}
-
-.about-group {
-    margin-top: 3.75em;
-}
-
-.about-text {
-   text-align: left;
-}
 
 /* 404 page */
 .block404 {
