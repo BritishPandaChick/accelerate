@@ -275,10 +275,6 @@ div.menu-social-media-nav-container ul li a {
 		flex-direction: row-reverse;
 	}
 	
-	.about-group-even .wp-block-group__inner-container {
-		flex-direction: row-reverse;
-	}
-	
 	.about-group figure {
 		flex-basis: 30%;
 	}

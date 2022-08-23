@@ -1,12 +1,11 @@
 <?php 
 /**
-*Template for displaying the About page
-*Description: template for displaying the About page
+* Template for displaying the About page
 *
 *
-*@package WordPress
-*@subpackage Accelerate Marketing
-*@since Accelerate Marketing 1.0
+* @package WordPress
+* @subpackage Accelerate Marketing
+* @since Accelerate Marketing 1.0
 */
 
 get_header(); ?>
