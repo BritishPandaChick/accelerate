@@ -12,6 +12,20 @@
 
 .home-page {
     background: url('img/taxi-photo.jpg') no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+	background-position: left;
+}
+
+.home-page.hero-content .main-content {
+	padding-top: 0;
+}
+
+.home-page.hero-content .main-content h1 {
+	line-height: 1;
+	padding-bottom: .5em;
+}
+
+.home-page.hero-content h3 {
+	font-weight: 600;
 }
 
 #masthead {
@@ -19,7 +33,7 @@
 }
 
 .button {
-	background: none repeat scroll 0 0 #45ac9d;
+	background: #45ac9d;
 }
 
 /*=== Featured Work === */ 
@@ -52,6 +66,8 @@
 
 .individual-featured-work h3 {
 	font: 500 1em/1.75 'Open Sans', Arial, sans-serif;
+	padding: 1em 0;
+	margin: 0;
 }
 
 /*== Blog Post Styles ==*/ 
@@ -79,6 +95,7 @@
 
 .case-study h2 {
     font: 700 1.5em/1.5 'Open Sans Semibold';
+	font-weight: 600;
 }
 
 .case-study h4 {
@@ -100,7 +117,6 @@ div.case-study-images {
 
 div.case-study-images img {
     width: 100%;
-	height: auto;
 	margin-bottom: 3.125em;
 	border: 1px solid #dddddd;
 }
@@ -211,18 +227,55 @@ div.case-study-images img {
 }
 
 /* Footer */ 
-div.menu-social-media-nav-container ul li {
-	list-style-type: none;
+.site-info .social-media-navigation, .site-info .site-description {
+	width: 100%;
+}
+
+.site-info .social-media-navigation {
+	text-align: center;
+}
+
+.site-info .site-description {
+	margin-top: 2em;
+	text-align: center;
+}
+
+.social-media-menu {
+	list-style: none;
+}
+
+.social-media-menu li {
 	display: inline;
 }
 
-div.menu-social-media-nav-container ul li a {
+.social-media-menu li i {
 	border-radius: 50%;
-	background-color: #333;
-	color: #fff;
-	width: 400px;
-	height: 400px;
-	padding: 7px;
+	border:.1em solid white;
+	padding: .25em;
+	color: white;
+	background-color: #45ac9d;
+}
+
+.page-id-47361 h1 {
+	display: none;
+}
+
+#nf-form-1-cont h3 {
+	font-size: 1.5em;
+}
+
+.nf-form-layout {
+	margin-top: 1em;
+}
+
+.nf-form-layout form div div:nth-child(2n) {
+	padding: 0;
+}
+
+#nf-label-field-5 {
+	font-size: 1em;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: normal;
 }
 
 /* Media Queries */
