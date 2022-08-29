@@ -10,9 +10,25 @@
  Text Domain:  accelerate-theme-child
 */
 
+.page-header .primary-navigation ul li a {
+	margin-left: 0;
+}
+
+#main {
+	margin-bottom: 0;
+}
+
+p {
+	font-size: 1.0625em;
+}
+
 .home-page {
     background: url('img/taxi-photo.jpg') no-repeat scroll right center / cover rgba(0, 0, 0, 0);
 	background-position: left;
+}
+
+.home-page.hero-content {
+	margin: 0;
 }
 
 .home-page.hero-content .main-content {
@@ -88,6 +104,25 @@
 	text-transform: uppercase;
 }
 
+.post-entry:last-child {
+	margin-bottom: ;
+}
+
+#navigation.nav-desktop {
+	display: none;
+}
+
+#navigation.nav-mobile {
+	display: flex;
+	margin-bottom: 0;
+	width: 100%;
+	border-bottom: 1px solid #bfbfbf;
+}
+
+#navigation.nav-mobile .left, #navigation.nav-mobile .pagination, #navigation.nav-mobile .right {
+	width: 33%;
+}
+
 /* === Case Studies ===*/
 .case-study {
     clear: both;
@@ -121,21 +156,21 @@ div.case-study-images img {
 	border: 1px solid #dddddd;
 }
 
-/* About */
+/*=== About ===*/
 .page-id-47369 .main-content {
     padding: 0 0 2em 0;
 }
 
 .about-header {
 	background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
-	background-position: left;
-	height: auto;
-	padding: 3em 0 4em 0;
+    background-position: left;
+    height: auto;
+    padding: 3em 0 4em 0;
 }
 
 .about-header .wp-block-group__inner-container {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .about-header h3 {
@@ -256,6 +291,10 @@ div.case-study-images img {
 	background-color: #45ac9d;
 }
 
+.site-info .menu-social-media-nav-container ul {
+	margin-left: 0;
+}
+
 .page-id-47361 h1 {
 	display: none;
 }
@@ -276,6 +315,56 @@ div.case-study-images img {
 	font-size: 1em;
 	font-family: 'Open Sans', Arial, sans-serif;
 	font-weight: normal;
+}
+
+#nf-field-5 {
+	display: none;
+}
+
+#nf-field-5-container {
+	margin-bottom: 3em;
+}
+
+#nf-label-field-1, #nf-label-field-2, #nf-label-field-3 {
+	font-size: 0.85em;
+	font-weight: 600;
+}
+
+#nf-form-fields-required, #nf-label-field-1 span, #nf-label-field-2 span, #nf-label-field-3 span {
+	display: none;
+}
+
+#nf-field-1, #nf-field-2, #nf-field-3 {
+	background: none;
+}
+
+#nf-field-4 {
+	width: 100%;
+	background: #45ac9d;
+	font-size: 1.125em;
+}
+
+.nf-field-element::after, .nf-error-field-errors {
+	display: none;
+}
+
+.nf-error-required-error {
+	font-size: 0.8125em;
+}
+
+.nf-response-msg h1 {
+	display: block;
+	font-size: 2.1875em;
+	font-weight: bold;
+	color: #45ac9d;
+	text-align: center;
+	margin-top: 1em;
+}
+
+.nf-response-msg h2 {
+	font-weight: normal;
+	text-align: center;
+	margin-top: 1em;
 }
 
 /* Media Queries */
