@@ -12,10 +12,10 @@
 
 @import url("../accelerate-theme/style.css");
 
-#primary-navigation ul li {
+/* #primary-navigation ul li {
 	display: inline-block;
 	margin-left: 35px;
-}
+} */
 
 .home-page {
     background: url('img/taxi-photo.jpg') no-repeat scroll left center / cover rgba(0, 0, 0, 0);
@@ -29,7 +29,7 @@
 	background: none repeat scroll 0 0 #45ac9d;
 }
 
-h1 {
+/* h1 {
 	font-weight: bold;
 	font-family: 'Montserrat';
 	font-size: 53px;
@@ -47,15 +47,21 @@ h1 {
 	font-weight: bold;
 	color: #45ac9d;
 	text-transform: uppercase;
-}
+} */
 
 /*=== Featured Work === */ 
 /* .featured-work {
 	clear: both;
 } */
+.featured-work .site-content {
+	margin: 6em auto;
+}
 
 .featured-work h4 {
+	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
 	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 2.25em;
 }
 
 .featured-work h3 {
@@ -66,11 +72,12 @@ h1 {
 .homepage-featured-work {
 	overflow: hidden;
 	padding: 0;
-	margin: 0;
-	list-style-type: none;
+	margin: 0 auto;
+	list-style: none;
+	width: 100%;
 }
 
-.homepage-featured-work li {
+/* .homepage-featured-work li {
 	float: left;
 	display: block;
 }
@@ -78,46 +85,85 @@ h1 {
 .featured-work-title {
 	text-align: center;
 	padding-bottom: 40px;
-}
+} */
 
 .individual-featured-work {
-	list-style-type: none;
+	/* list-style-type: none;
 	display: inline-block;
 	padding: 0 5px 0 5px;
-	text-align: center;
+	text-align: center; */
+	margin-bottom: 2em;
+}
+
+.individual-featured-work a {
+	display: block;
+}
+
+.individual-featured-work h3 {
+	font: 500 1em/1.75 'Open Sans', Arial, sans-serif;
 }
 
 /*== Blog Post Styles ==*/ 
-.blog-post {
+/* .blog-post {
 	width: 45%;
 	margin: 0;
 	float: left;
 	margin-bottom: 15px;
-}
+} */
 
 .blog-post h4 {
-	font-size: 16px;
-	font-family: 'Montserrat';
+	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
 	color: #a6a6a6;
 	text-transform: uppercase;
+	margin: 2em 0 .5em;
 }
 
-.blog-post h2 {
+.blog-post h3 {
+	font-size: 1.5em;
+}
+
+/* .blog-post h2 {
 	font-size: 24px;
 	font-family: 'Montserrat';
 	font-weight: bold;
-}
+} */
 
-.blog-post .read-more-link {
+.read-more-link {
+	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+/* .blog-post .read-more-link {
 	font-size: 24px;
 	font-family: 'Montserrat';
 	font-weight: bold;
 	color: #45ac9d;
 	text-transform: uppercase;
-}
+} */
 
 /* === Case Studies ===*/
-article.case-study {
+.case-study {
+	clear: both;
+}
+
+.case-study h2 {
+	font: 700 1.5em/1.5 'Open Sans Semibold';
+}
+
+.case-study h4 {
+	font: 400 .875em/1.25 'Open Sans';
+	margin: 1em 0;
+}
+
+.case-study h4 span {
+	color: #878787;
+}
+
+.case-study-sidebar p {
+	margin: 2em 0;
+}
+
+/* article.case-study {
 	margin: 40px 0 0;
 }
 
@@ -125,19 +171,24 @@ aside.case-study-sidebar {
 	float: left;
 	width: 314px;
 	margin: 0 40px 0 0;
-}
+} */
 
 div.case-study-images {
-	float: left;
-	width: 606px;
+	/* float: left;
+	width: 606px; */
+	margin-top: 3em;
 }
 
 div.case-study-images img {
-	margin-bottom: 50px;
+	width: 100%;
+	height: auto;
+	margin-bottom: 3.125em;
 	border: 1px solid #dddddd;
+	/* margin-bottom: 50px;
+	border: 1px solid #dddddd; */
 }
 
-.case-entry-title {
+/* .case-entry-title {
 	padding-top: 60px;
 	font-family: 'Open Sans';
 	font-weight: 600;
@@ -145,6 +196,7 @@ div.case-study-images img {
 
 .case-study {
 	font-family: 'Open Sans';
+	clear: both;
 }
 
 .case-study-sidebar {
@@ -169,7 +221,7 @@ div.case-study-images img {
 	display: inline-block;
 	max-height: 460px;
 	overflow: auto;
-}
+} */
 
 /*=== About ===*/
 .about-page {
@@ -355,6 +407,20 @@ h2.replay_contact {
 	color: #45ac9d !important;
 }
 
+/* #nf-field-1-container, #nf-field-2-container {
+	clear: none;
+	float: left;
+	width: 48%;
+}
+
+#nf-field-2-container, #nf-field-4-container {
+	float: right;
+}
+
+.nf-form-fields-required, .ninja-forms-req-symbol {
+	display: none;
+} */
+
 /*=== Footer ===*/ 
 .site-info .social-media-navigation, .site-info .site-description {
 	width: 100%;
@@ -460,6 +526,20 @@ h2.replay_contact {
 	text-align: center;
 	margin-top: 1em;
 }
+
+/* div.menu-social-media-nav-container ul li {
+	list-style-type: none;
+	display: inline;
+}
+
+div.menu-social-media-nav-container ul li a {
+	border-radius: 50%;
+	background-color: #333;
+	color: #fff;
+	width: 400px;
+	height: 400px;
+	padding: 7px;
+} */
 
 /* Media Queries */
 @media (min-width: 768px) {
