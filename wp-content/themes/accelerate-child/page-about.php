@@ -14,7 +14,10 @@ get_header(); ?>
 <section class="about-page">
     <div class='homepage-hero'>
         <?php the_content(); ?>
-        <h2><span class="about-co"><span style="color:#45ac9d";>Accelerate</span> is a strategy and marketing agency located in the heart of NYC. Our goal is to build businesses by making our clients visible and making their customers smile.</span></h2>
+        <h2>
+			<span class="about-co"><span style="color:#45ac9d";>Accelerate</span> is a strategy and marketing agency located in the heart of NYC. Our goal is to build businesses by making our clients visible and making their customers smile.
+			</span>
+		</h2>
     </div>
     
     <div class="site-content">
