@@ -47,7 +47,62 @@
 	font-weight: bold;
 	color: #45ac9d;
 	text-transform: uppercase;
-} */
+} 
+
+.tweets {
+	float: left;
+	display:  inline-block;
+	width:  45%;
+	margin-left: 5%;
+}
+
+.tweets h4 {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    color: #a6a6a6;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.tweets h3 {
+    color: #000000;
+    font-size: 24px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    margin-top: 36px;
+    text-align: left;
+}
+
+.tweets h2, a {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #45ac9d;
+    text-transform: uppercase;
+}
+
+.tweets ul {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: normal;
+    padding-top: 25px;
+    text-align: left;
+    margin-left: 0;
+}
+
+.tweets em {
+    display: none;
+}
+
+#pi_simpletwittertweets-2 {
+    padding: 0;
+}
+
+.menu-top-nav-container ul {
+    overflow: auto;
+}
+
+*/
 
 /*=== Featured Work === */ 
 /* .featured-work {
@@ -112,6 +167,11 @@
 } */
 
 .blog-post h4 {
+	/* font-size:  16px;
+	font-family: 'Montserrat';
+	color:  #a6a6a6;
+	text-transform: uppercase;
+	 */
 	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
 	color: #a6a6a6;
 	text-transform: uppercase;
@@ -225,35 +285,14 @@ div.case-study-images img {
 
 /*=== About ===*/
 .about-page {
-    background: url('img/taxi-photo.jpg') no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    background: url('img/taxi-photo.jpg') no-repeat scroll right center / cover rgba(0, 0, 0, 0);
     height: 150px;
-	margin: 0 0 80px;
+    margin: 0 0 80px;
     padding: 100px 0;
 }
 
-.work-with-us {
-    border-top: dotted 1px #bfbfbf;
-}
-
-.interested {
-    width: 50%;
-    float: left;
-    margin: 60px 0 0 0;
-}
-
-.contact-button {
-    background: #45ac9d;
-    color: #fff !important;
-    font: bold 1.17em/2.77 'Montserrat', "Open Sans", Arial, sans-serif;
-    display: inline-block;
-    height: 55px;
-    min-width: 250px;
-    padding: 0 20px;
-    text-align: center;
-    text-decoration: none;
-    float: right;
-    margin-bottom: 50px;
-    margin-top: 50px;
+.about-page .homepage-hero {
+	border:  2px solid red;
 }
 
 .about-co {
@@ -272,6 +311,37 @@ div.case-study-images img {
     margin-bottom: 50px;
     line-height: .5em;
 }
+
+
+.work-with-us {
+    border-top: dotted 1px #bfbfbf;
+}
+
+.interested {
+    width: 50%;
+    float: left;
+    margin: 60px 0 0 0;
+}
+
+
+.contact-button {
+    background: #45ac9d;
+    color: #fff !important;
+    font: bold 1.17em/2.77 'Montserrat', "Open Sans", Arial, sans-serif;
+    display: inline-block;
+    height: 55px;
+    min-width: 250px;
+    padding: 0 20px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+
+
 
 .what-we-do {
     overflow: auto;
