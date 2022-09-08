@@ -10,614 +10,826 @@
  Text Domain:  accelerate-theme-child
 */
 
-@import url("../accelerate-theme/style.css");
-
-/* #primary-navigation ul li {
-	display: inline-block;
-	margin-left: 35px;
-} */
-
-.home-page {
-    background: url('img/taxi-photo.jpg') no-repeat scroll right center / cover rgba(0, 0, 0, 0);
-}
-
-#masthead {
-	background: none repeat scroll 0 0 #45ac9d;
-}
-
-.button {
-	background: none repeat scroll 0 0 #45ac9d;
-}
-
-/* h1 {
-	font-weight: bold;
-	font-family: 'Montserrat';
-	font-size: 53px;
-	color: white;
-}
-
-#masthead nav ul li {
-	float: left;
-	margin: 0 10px;
-}
-
-.blog-post .read-more-link {
-	font-size: 16px;
-	font-family: 'Montserrat';
-	font-weight: bold;
-	color: #45ac9d;
-	text-transform: uppercase;
-} 
-
-.tweets {
-	float: left;
-	display:  inline-block;
-	width:  45%;
-	margin-left: 5%;
-}
-
-.tweets h4 {
-    font-size: 16px;
-    font-family: 'Montserrat';
-    color: #a6a6a6;
-    text-transform: uppercase;
-    text-align: left;
-}
-
-.tweets h3 {
-    color: #000000;
-    font-size: 24px;
-    font-family: 'Montserrat';
-    font-weight: bold;
-    margin-top: 36px;
-    text-align: left;
-}
-
-.tweets h2, a {
-    font-size: 16px;
-    font-family: 'Montserrat';
-    font-weight: bold;
-    color: #45ac9d;
-    text-transform: uppercase;
-}
-
-.tweets ul {
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: normal;
-    padding-top: 25px;
-    text-align: left;
+/* This removes margin on the left of the menu items on mobile. */
+.page-header .primary-navigation ul li a {
     margin-left: 0;
+ }
+
+/* This makes sure the distance between the blog page navigation and the bottom border is better. */
+#main {
+    margin-bottom: 0;
 }
 
-.tweets em {
-    display: none;
+/* Setting an em font-size (in the parent theme it was set as 17px) */
+p {
+    font-size: 1.0625em;
 }
 
-#pi_simpletwittertweets-2 {
-    padding: 0;
+ /* Changing the hero image and h3 font-weight */
+.home-page {
+    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+    background-position: left;
 }
 
-.menu-top-nav-container ul {
-    overflow: auto;
+.home-page.hero-content {
+    margin: 0;
 }
 
-*/
+.home-page.hero-content .main-content {
+    padding-top: 0;
+}
 
-/*=== Featured Work === */ 
-/* .featured-work {
-	clear: both;
-} */
+.home-page.hero-content .main-content h1 {
+    line-height: 1;
+    padding-bottom: .5em;
+}
+
+.home-page.hero-content h3 {
+    font-weight: 600;
+}
+
+/* Changing the navigation bar background colour */
+#masthead {
+    background: none repeat scroll 0 0 #45ac9d;
+}
+
+/* Changing the button background colour */
+.button {
+	background: #45ac9d;
+}
+
+/* Featured work on homepage */
+
 .featured-work .site-content {
-	margin: 6em auto;
+    margin: 6em auto;
 }
 
 .featured-work h4 {
-	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
-	text-align: center;
-	text-transform: uppercase;
-	margin-bottom: 2.25em;
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2.25em;
 }
 
-/* .featured-work h3 {
-	font-size: 15px;
-	margin-left: 60px;
-} */
-
 .homepage-featured-work {
-	list-style: none;
-	margin: 0 auto;
+    list-style: none;
+    margin: 0 auto;
 	padding: 0;
 	text-align: center;
 	width: 100%;
 }
 
-/* .homepage-featured-work li {
-	float: left;
-	display: block;
-}
-
-.featured-work-title {
-	text-align: center;
-	padding-bottom: 40px;
-} */
-
 .individual-featured-work {
-	/* list-style-type: none;
-	display: inline-block;
-	padding: 0 5px 0 5px;
-	text-align: center; */
-	margin-bottom: 2em;
+    margin-bottom: 2em;
 }
 
 .individual-featured-work a {
-	display: block;
+    display: block;
 }
 
 .individual-featured-work h3 {
-	font: 500 1em/1.75 'Open Sans', Arial, sans-serif;
+    font: 500 1em/1.75 'Open Sans', Arial, sans-serif;
+    padding: 1em 0;
+    margin: 0;
 }
 
-/*== Blog Post Styles ==*/ 
-/* .blog-post {
-	width: 45%;
-	margin: 0;
-	float: left;
-	margin-bottom: 15px;
-} */
+/* Change the blog post and recent tweet on the home page */
 
-.blog-post h4 {
-	/* font-size:  16px;
-	font-family: 'Montserrat';
-	color:  #a6a6a6;
-	text-transform: uppercase;
-	 */
-	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
-	color: #a6a6a6;
-	text-transform: uppercase;
-	margin: 2em 0 .5em;
+.blog-post h4,
+.tweet h4 {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #a6a6a6;
+    text-transform: uppercase;
+    margin: 2em 0 .5em;
 }
 
-.blog-post h3 {
+.blog-post h3,
+.tweet h3 {
 	font-size: 1.5em;
 }
 
-/* .blog-post h2 {
-	font-size: 24px;
-	font-family: 'Montserrat';
-	font-weight: bold;
-} */
-
 .read-more-link {
-	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
-	color: #45ac9d;
-	text-transform: uppercase;
-}
-/* .blog-post .read-more-link {
-	font-size: 24px;
 	font-family: 'Montserrat';
-	font-weight: bold;
+	font-weight: 700;
 	color: #45ac9d;
 	text-transform: uppercase;
-} */
-
-/* === Case Studies ===*/
-.case-study {
-	clear: both;
 }
 
+/* Removing/adding margins to recent tweet on homepage to make it level
+to recent blog on homepage */
+
+.recent-tweets .tweet {
+    margin: 0;
+}
+
+#ctf .ctf-item {
+    padding: 0;
+}
+
+/* Just adding  "#ctf .ctf-tweet-content" didn't remove the padding.
+In devtools I saw in the ctf stylesheetpadding was added to 
+"#ctf.ctf-narrow .ctf-tweet-content" and that did work */
+#ctf.ctf-narrow .ctf-tweet-content {
+    padding: 0;
+    margin: 0;
+}
+
+/*Case Studies*/
+.case-study {
+    clear: both;
+}
 .case-study h2 {
-	font: 700 1.5em/1.5 'Open Sans Semibold';
+    font: 700 1.5em/1.5 'Open Sans';
+    font-weight: 600;
 }
 
 .case-study h4 {
-	font: 400 .875em/1.25 'Open Sans';
-	margin: 1em 0;
+    font: 400 .875em/1.25 'Open Sans';
+    margin: 1em 0;
 }
-
 .case-study h4 span {
-	color: #878787;
+    color: #878787;
 }
-
 .case-study-sidebar p {
-	margin: 2em 0;
+    margin: 2em 0;
 }
-
-/* article.case-study {
-	margin: 40px 0 0;
-}
-
-aside.case-study-sidebar {
-	float: left;
-	width: 314px;
-	margin: 0 40px 0 0;
-} */
 
 div.case-study-images {
-	/* float: left;
-	width: 606px; */
 	margin-top: 3em;
 }
-
 div.case-study-images img {
-	width: 100%;
-	/* height: auto; */
+    width: 100%;
 	margin-bottom: 3.125em;
 	border: 1px solid #dddddd;
-	/* margin-bottom: 50px;
-	border: 1px solid #dddddd; */
 }
 
-/* .case-entry-title {
-	padding-top: 60px;
-	font-family: 'Open Sans';
-	font-weight: 600;
-}
+/*END Case Studies*/
 
-.case-study {
-	font-family: 'Open Sans';
-	clear: both;
-}
+/* Footer Styles */
 
-.case-study-sidebar {
-	width: 30%;
-	float: left;
-	height: 460px;
-	padding-right: 5%;
-	display: inline-block;
-}
-
-.case-study-services {
-	color: #878787;
-	font-family: 'Open Sans';
-	font-weight: normal;
-	font-size: 14px;
-}
-
-.case-study-images {
-	width: 65%;
-	float: right;
-	padding: 60px 0 20px 0;
-	display: inline-block;
-	max-height: 460px;
-	overflow: auto;
-} */
-
-/*=== About ===*/
-.about-page {
-    background: url('img/taxi-photo.jpg') no-repeat scroll right center / cover rgba(0, 0, 0, 0);
-    height: 150px;
-    margin: 0 0 80px;
-    padding: 100px 0;
-}
-
-.about-page .homepage-hero {
-	border:  2px solid red;
-}
-
-.about-co {
-    color: #ffffff;
-    font-weight: 500;
-    line-height: 1.5em;
-    font-size: 1.2em;
-    width: 50%;
-    float: right;
-    margin-right: 325px;
-    margin-bottom: 130px;
-}
-
-.about-services {
-    text-align: center;
-    margin-bottom: 50px;
-    line-height: .5em;
-}
-
-
-.work-with-us {
-    border-top: dotted 1px #bfbfbf;
-}
-
-.interested {
-    width: 50%;
-    float: left;
-    margin: 60px 0 0 0;
-}
-
-
-.contact-button {
-    background: #45ac9d;
-    color: #fff !important;
-    font: bold 1.17em/2.77 'Montserrat', "Open Sans", Arial, sans-serif;
-    display: inline-block;
-    height: 55px;
-    min-width: 250px;
-    padding: 0 20px;
-    text-align: center;
-    text-decoration: none;
-    float: right;
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-
-
-
-
-
-.what-we-do {
-    overflow: auto;
-}
-
-.about-image-1 {
-    display: inline-block;
-    float: left;
-}
-
-.content-strategy {
-    display: inline-block;
-    width: 70%;
-    margin-left: 40px;
-    margin-bottom: 30px;
-    float: right;
-}
-
-.about-image-2 {
-    display: inline-block;
-    float: right;
-    margin-bottom: 40px;
-}
-
-.influencer-mapping {
-    display: inline-block;
-    width: 70%;
-    margin-right: 40px;
-    margin-bottom: 30px;
-    float: left;
-}
-
-.about-image-3 {
-    display: inline-block;
-    float: left;
-    clear: both;
-}
-
-.social-media-strategy {
-    display: inline-block;
-    width: 70%;
-    margin-left: 40px;
-    margin-bottom: 30px;
-    float: right;
-}
-
-.about-image-4 {
-    display: inline-block;
-    float: right;
-}
-
-.design-development {
-    display: inline-block;
-    width: 70%;
-    margin-right: 40px;
-    margin-bottom: 100px;
-    float: left;
-}
-
-
-/*== 404 page ==*/
-.oops {
-	height: 150px;
-	margin: 0 0 80px;
-	padding: 100px 0;
-}
-
-/*== Contact Us ==*/ 
-#contact-content {
-	width: 70%;
-	margin: 30px 175px 60px 0;
-	float: right;
-}
-
-#ninja_forms_field_1_div_wrap {
-	float: left;
-	display: inline-block;
-	width: 300px;
-}
-
-#ninja_forms_field_1_label {
-	font-weight: normal;
-	font-size: 14px;
-}
-
-#ninja_forms_field_2_div_wrap {
-	float: right;
-	width: 300px;
-	display: inline-block;
-}
-
-#ninja_forms_field_2_label {
-	font-weight: normal;
-	font-size: 14px;
-}
-
-#ninja_forms_field_3_label {
-	font-weight: normal;
-	font-size: 14px;
-}
-
-#ninja_forms_field_5 {
-	float: right;
-	background: #45ac9d;
-	color: #ffffff;
-	padding: 15px 80px 15px 80px;
-}
-
-.reply_contact {
-	text-align: center;
-}
-
-h2.replay_contact {
-	color: #45ac9d !important;
-}
-
-/* #nf-field-1-container, #nf-field-2-container {
-	clear: none;
-	float: left;
-	width: 48%;
-}
-
-#nf-field-2-container, #nf-field-4-container {
-	float: right;
-}
-
-.nf-form-fields-required, .ninja-forms-req-symbol {
-	display: none;
-} */
-
-/*=== Footer ===*/ 
-.site-info .social-media-navigation, .site-info .site-description {
-	width: 100%;
+/* This makes sure on mobile the social icons are positioned above the site
+ description instead of next to each other */
+.site-info .social-media-navigation,
+.site-info .site-description {
+    width: 100%;
 }
 
 .site-info .social-media-navigation {
-	text-align: center;
+    text-align: center;
 }
 
 .site-info .site-description {
-	margin-top: 2em;
-	text-align: center;
+    margin-top: 2em;
+    text-align: center;
 }
 
+/* Show nav list items horizontally and without bullets */
 .social-media-menu {
-	list-style: none;
+    list-style: none;
 }
-
+ 
 .social-media-menu li {
-	display: inline;
+    display: inline;
 }
 
+/* Styles the social menu icons */
 .social-media-menu li i {
-	border-radius: 50%;
-	border: .1em solid white;
-	padding: .25em;
-	color: white;
-	background-color: #45ac9d;
+    border-radius: 50%;
+    border: .1em solid white;
+    padding: .25em;
+    color: white;
+    background-color: #45ac9d;
 }
 
-.site-info .menu-social-media-nav-container ul {
-	margin-left: 0;
+.site-info .menu-social-media-nav-container ul
+{ 
+    margin-left: 0;
 }
 
+/* END Footer styles*/
+
+/* Contact form styles */
+
+/* To prevent a double header */
 .page-id-47361 h1 {
-	display: none;
+    display: none;
 }
 
+/* I want to use the header that is part of the form, so it dissapears once the confirmation message comes up. */
 #nf-form-1-cont h3 {
-	font-size: 1.5em;
+   font-size: 1.5em;
 }
 
 .nf-form-layout {
-	margin-top: 1em;
+    margin-top: 1em;
 }
 
-.nf-form-layout form div div:nth-child(2n) {
-	padding: 0;
+/* Removes padding around the form. */
+.nf-form-layout form div div:nth-child(2n)  {
+    padding: 0;
 }
 
-#nf-label-field-5 {
-	font-size: 1em;
-	font-family: 'Open Sans', Arial, sans-serif;
-	font-weight: normal;
+/* I couldn't add a instruction 
+paragraph above the form, so I have added another form field to use the label
+ as an instruction and I used code to make the form field invisible
+(it is the first field of the form but it is called field-5 because it is the last 
+one I added. */
+#nf-label-field-5  {
+    font-size: 1em;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: normal;
 }
 
-#nf-field-5 {
-	display: none;
+#nf-field-5  {
+    display: none;   
 }
 
 #nf-field-5-container {
-	margin-bottom: 3em;
+    margin-bottom: 3em;
 }
 
-#nf-label-field-1, #nf-label-field-2, #nf-label-field-3 {
-	font-size: 0.85em;
-	font-weight: 600;
+/* Changes the label font of th name, email and message box. */
+#nf-label-field-1,
+#nf-label-field-2,
+#nf-label-field-3 {
+    font-size: 0.85em;
+    font-weight: 600;
 }
 
-#nf-form-fields-required, #nf-label-field-1 span, #nf-label-field-2 span, #nf-label-field-3 span {
-	display: none;
+/* Removes the default red star next to each label */
+.nf-form-fields-required,
+#nf-label-field-1 span,
+#nf-label-field-2 span,
+#nf-label-field-3 span {
+    display: none;
 }
 
-#nf-field-1, #nf-field-2, #nf-field-3 {
-	background: none;
+/* Removes the grey background in the input boxes. */
+#nf-field-1,
+#nf-field-2,
+#nf-field-3 {
+    background: none;
 }
 
+/* Changes the font of the send button and makes it 100% wide for mobile */
 #nf-field-4 {
-	width: 100%;
-	background: #45ac9d;
-	font-size: 1.125em;
+    width: 100%;
+    background: #45ac9d;
+    font-size: 1.125em;  
 }
 
-.nf-field-element::after, .nf-error-field-errors {
-	display: none;
+/* Removes exclamation mark in fields and message under form when one or more fields are left empty.  */
+.nf-field-element::after,
+.nf-error-field-errors {
+    display: none;
 }
 
+/* Changes font error message under field when it is left empty. */
 .nf-error-required-error {
-	font-size: 0.8125em;
+    font-size: 0.8125em;
 }
 
+/* Above I added daisplay:none to the main header h1 of the page, 
+but the h1 in the confirmation page does need to show. Also this 
+changes the styles of confirmation h1 and h2. */
 .nf-response-msg h1 {
-	display: block;
-	font-size: 2.1875em;
-	font-weight: bold;
-	color: #45ac9d;
-	text-align: center;
-	margin-top: 1em;
+    display: block;
+    font-size: 2.1875em;
+    font-weight: bold;
+    color: #45ac9d;
+    text-align: center;
+    margin-top: 1em;
 }
 
 .nf-response-msg h2 {
-	font-weight: normal;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 1em;
+}
+
+/* END Contact form styles*/
+
+/* About page styles */
+.page-id-47369 .main-content {
+    padding: 0 0 2em 0;
+}
+
+/* I have copied this code from the homepage styles only with different padding */
+.about-header {
+    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+    background-position: left;
+    height: auto;
+    padding: 3em 0 4em 0;
+}
+
+/* I have added flex to position the h3 */
+.about-header .wp-block-group__inner-container {
+    display: flex;
+    justify-content: center;
+}
+
+.about-header h3 {
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 0;
+    width: 80%;
 	text-align: center;
-	margin-top: 1em;
 }
 
-/* div.menu-social-media-nav-container ul li {
-	list-style-type: none;
-	display: inline;
+.about-content {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-div.menu-social-media-nav-container ul li a {
-	border-radius: 50%;
-	background-color: #333;
+.about-intro {
+    margin: 4em 0 3em 0;
+}
+
+/* The same styles as the Featured work title (h4) on the front page */
+.about-intro h4 {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0  0 1em 0;
+}
+
+.about-intro p {
+    margin: 0 0 1em 0;
+}
+
+.about-intro a {
+	color: #3b3b3b;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.about-group {
+    margin-top: 3.75em;
+}
+
+.about-text {
+   text-align: left;
+}
+
+/* END About page styles */
+
+/* 404 styles */
+
+/* Styles copied from front page. 
+I added background-postion:left; to make sure if the screen size is 
+smaller, the taxi will still be visible. */
+.hero-404 {
+    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+    background-position: left;
+    height: auto;
+    margin: 0 0 5em;
+    padding: 4em 0 12em 0;
+	text-align: center;
+}
+
+/* Unlike on the homepage, I chose to use the same font-size and line-height for 
+mobile and desktop, because I like the font to be big on mobile as well.
+I am using Londrina Solid to make the h1 stand out more. I have enqueded this google font 
+to my child theme's functions.php file. */
+.content-404 h1 {
 	color: #fff;
-	width: 400px;
-	height: 400px;
-	padding: 7px;
-} */
+	font-weight:bold;
+	font-size: 5em;
+	line-height: 2.25;
+	margin: 0 2%;
+    font-family: 'Londrina Solid', 'Montserrat', 'Open Sans', Arial, sans-serif;
+}
 
-/*=== Media Queries ===*/
+.content-404 h3 {
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 1.4em;
+    font-weight: normal;
+    margin: 0 0 1em;
+    font-weight: 600;
+}
+
+.take-home h3 {
+    margin: 0;
+}
+
+/* I have chosen to keep the image/button the same size on tablet and mobile, 
+just like the text. */
+.take-home img {
+    width: 200px;
+}
+
+/* END 404 styles */
+
+/* Blog styles */
+
+/* Under each post there is some padding, a border and some margin and
+straight under there the mext post. The last post doesn't have a border, 
+so than you just see an extra big white gap. That's why I removed the margin
+of the last post entry. */
+.post-entry:last-child {
+	margin-bottom: 0;
+}
+
+/* On the blog overview page there is a nav bar at the bottom to navigate the different pages.
+I have made added to of those nav bars on index.php. One to show on mobile, above the sidebar 
+(which on mobile is at the bottom) and one for desktop (which is under the blogs and the sidebar. */
+#navigation.nav-desktop {
+    display: none;
+}
+
+/* I have added flex to lay out the left and right links and the pagination text (on mobile and desktop),
+because otherwise when there is no left or right link (on first or last page)
+the other parts are too much to the left or right. */
+#navigation.nav-mobile {
+    display: flex;
+    margin-bottom: 0;
+    width: 100%;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+#navigation.nav-mobile .left,
+#navigation.nav-mobile .pagination,
+#navigation.nav-mobile .right {
+    width: 33%;
+}
+
+#navigation.nav-mobile .left a {
+    float: left;
+}
+
+#navigation.nav-mobile .right a {
+    float: right;
+}
+
+/* END Blog styles */
+
+/* Blog sidebar styles  */
+
+/* On the original site the sidebar wouldn't show on mobile. Now I have changed it so it will show under the blog. 
+I have also added a light background colour. */
+#sidebar {
+    display: block;
+    padding: 0;
+    background-color: #f3fffd;
+}
+
+/* I have made sure each sidebar item has some padding and a border at the bottom. */
+#sidebar .widget {
+    border-bottom: 1px solid #BFBFBF;
+    padding: 1.75em 1.8em;
+}
+
+#sidebar .widget:first-of-type {
+    padding-top: 2em;
+}
+
+/* Removes border under last sidebar widget. */
+#sidebar .widget:last-of-type {
+    border-bottom: 0;
+}
+
+/* Styles Newsletter sign up form */
+#primary-sidebar #block-4.widget {
+    padding-top: 1.75em;
+    padding-bottom: 1.75em;
+    border-bottom: 1px solid #BFBFBF;
+}
+
+/* Above the signup form an empty p is added with some javascript for Mailchimp
+and under the form an empty p.
+I don't really understand why they are there, but this code removes their margin. */
+#primary-sidebar #block-4.widget p {
+    margin: 0;
+}
+
+/* Adding styles to the the signup form header */
+#primary-sidebar .mc4wp-form-fields h4 {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    margin: 0  0 1em 0;
+}
+
+/* Changes the font and the padding of the label signup form */
+#primary-sidebar .mc4wp-form-fields #signup-label {
+    font-size: 0.85em;
+    font-weight: 600;
+    padding-top: 1.5625em;
+}
+
+/* Changes the padding around the email field in the signup form */
+#primary-sidebar .mc4wp-form-fields #signup-email-field {
+    padding-top: 0.3em;
+    padding-bottom: 1.5625em;
+}
+
+/* Makes the email input form 100% wide */
+#primary-sidebar .mc4wp-form-fields #signup-email-field input {
+    width: 100%;
+}
+
+/* Changes the font and colour of the subscribe button and makes it 100% wide */
+#primary-sidebar .mc4wp-form-fields #signup-sunscribe-button input {
+    width: 100%;
+    background: #45ac9d;
+    font-size: 1.125em;  
+    padding: 0;
+}
+
+/* Makes the searchbar 100% width. */
+#primary-sidebar .widget_search input[type="text"] {
+	width: 84%;
+}
+
+#primary-sidebar .widget_search input[type="submit"] {
+	width: 16%;
+}
+
+#primary-sidebar .widget_categories li:last-of-type,
+#primary-sidebar .widget_archive li:last-of-type {
+    margin-bottom: 0;
+} 
+
+/* I had to change some padding/margins, because the events part in the sidebar is 
+actually 4 different widgets, so there was too much padding/margin and
+a few unneccesary borders. */
+#primary-sidebar #block-6 {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+#primary-sidebar aside.widget.widget_block.widget_media_image {
+    padding-top: 0;
+    padding-bottom: 1em;
+    border-bottom: 0;
+}
+
+#primary-sidebar .wp-block-image {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+#primary-sidebar #block-9 {
+    padding-bottom: 1.75em;
+}
+
+/* I had to change some padding/margins, because the about part in the sidebar is 
+actually 2 different widgets, so there was too much padding/margin and
+a few unneccesary borders. */ 
+
+#primary-sidebar #block-12 {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+#primary-sidebar #block-10 {
+    padding-top: 0;
+}
+
+#primary-sidebar #block-10 p {
+    margin-bottom: 0;
+}
+
+/* END Blog sidebar styles */
+
+/* Social sharing styles */
+
+/* The margin set by the plugin wouldn't be overridden, so 
+I added !important */
+.addtoany_content {
+    margin-top: 2em !important;
+    margin-bottom: .5em !important;
+}
+
+/* This removes padding in the left of the first social sharing button. */
+.addtoany_list a:first-of-type {
+    padding-left: 0;
+}
+
+.entry-footer {
+    margin-top: 0;
+}
+
+/* END Social sharing styles */
+
+/* Media Queries */
 @media (min-width: 768px) {
-	.featured-work .site-content {
-		margin: auto auto 3em;
-	}
-	
-	.individual-featured-work {
-		float: left;
-		width: 33%;
-		padding: 0 .5em;
-	}
-	
-    .blog-post {
-    	width: 50%;
-    	float: left;
+
+     /* This add  margin on the left of the menu items on mobile. */
+    .page-header .primary-navigation ul li a {
+        margin-left: .25em;
+    }
+
+    /* Homepgae styles */
+    .featured-work .site-content {
+        margin: auto auto 3em;
+    }
+
+    /* Adding flexbox styles to homepage featured work */
+    .homepage-featured-work {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .individual-featured-work {
+        width: 31%;
+        padding: 0;
+    }
+
+    /* Adding flexbox styles to homepage recent tweet and recent blog */
+    .homepage-recent {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .recent-posts,
+    .recent-tweets {
+    	width: 45%;
+    }
+
+    .blog-post,
+    .tweet {
         margin-bottom: 2em;
     }
-	
+
+    /* END Homepage styles */
+
+    /* Footer styles */
+
+    /* These styles make sure the site description and the social icons 
+    are positioned in the right place on bigger screens. On mobile the social icons are 
+    positioned above the site description, so I had to use row-reverse to make sure 
+    they are positioned on the right rather than the left. */
+    .site-info {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .site-info .social-media-navigation,
+    .site-info .site-description {
+        width: 49%;
+        display: block;
+    }
+    
+    .site-info .menu-social-media-nav-container {
+        float: right;
+    }
+
+    .site-info .site-description {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    /* END Footer styles */
+
+    /* Case study styles */
     aside.case-study-sidebar {
         float: left;
         width: 34%;
         margin: 0 6% 0 0;
     }
-	
     div.case-study-images {
         float: left;
         width: 60%;
     }
+    /* END Case study styles */
+
+    /* Contact styles */
+
+    /* Adds flex to containers of each label plus field. */
+    nf-fields-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    /* Makes each field a bit more then half width */
+    nf-field {
+        width: 48%;
+    }
+    
+    /* Makes the instruction paragraph (which is a label in disguise) the message
+    box and the box around the send button full width. I used the nth-child technique 
+    to be able to select individual nf-field divs, because they didn't have any specific 
+    classes/id's and I couldn't add any in Ninja Forms. 3n-2 means the first child, because 
+    just using nth-child(1) won't work */
+    nf-field:nth-child(3n-2),
+    nf-field:nth-child(4n),
+    nf-field:nth-child(5n) {
+        width: 100%;
+    }
+
+    /* Selects the div around the input button and removes flex. That way I can use the float 
+    property on the button */
+    #nf-field-4-wrap .nf-field-element {
+        display: block;
+    }
+
+    /* Makes the button one third width and float to the right. */
+    #nf-field-4 {
+        width: 33%;
+        float: right; 
+    }
+
+    /* END Contact study styles */
+
+    /* About styles */
+
+    .about-header h3 {
+        width: 50%;
+        max-width: 500px;
+    }
+
+    .about-content {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about-group .wp-block-group__inner-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* This code makes sure for every second about group the picture is shown 
+    on the right of the text  */
+    .about-group-even .wp-block-group__inner-container {
+        flex-direction: row-reverse;
+    }
+    
+    .about-group figure {
+        flex-basis: 30%;
+    }
+    
+    .about-text {
+        flex-basis: 70%;
+    }
+
+    /* This removes the flex which means the header and paragraph are positioned on 
+    top of each other rather than next to each other. */
+    .about-text .wp-block-group__inner-container {
+        display: block;
+    }
+
+    .about-text {
+        flex-basis: 66%;
+    }
+
+    .about-text h3 {
+        margin-top: 0;
+    }
+
+    .about-text p {
+        margin-bottom: 0;
+    }
+
+    .about-group figure {
+        margin-bottom: 0;
+        flex-basis: 23%;
+    }
+
+    /* END About styles */
+
+    /* Sidebar styles */
+    
+    /* END Sidebar */
+
+    /* Blog styles */
+    
+    #navigation.nav-mobile {
+        display: none;
+    }
+
+    /* I have added flex to lay out the left and right links and the pagination text,
+    because otherwise when there is no left or right link (on first or last page)
+    the other parts are too much to the left or right. */
+    #navigation.nav-desktop {
+        display: flex;
+        border-bottom: 1px solid #bfbfbf;
+    }
+
+    #navigation.nav-desktop .left,
+    #navigation.nav-desktop .pagination,
+    #navigation.nav-desktop .right {
+        width: 33%;
+    }
+
+    #navigation.nav-desktop .left a {
+        float: left;
+    }
+
+    #navigation.nav-desktop .right a {
+        float: right;
+    }
+
+    /* END Blog styles */
 }
