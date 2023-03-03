@@ -3,7 +3,7 @@ Contributors: wpninjasllc, kstover, jameslaws, kbjohnson90, klhall1987, krmoorho
 Tags: forms, contact form, email form, form builder, custom form, pdf form, registration form, payment form, login form, contact me, signature form, upload form, file upload form, conditional form, feedback form, appointment form, quote form, survey form, contact button, signup form, form plugin, contact form plugin, subscription form, email subscription form, newsletter form, donation form, booking form, quote request form, multi page form, conditional logic form, subscription form, application form, employment verification form, star rating form, rating form, event form, mailchimp form, campaign monitor form, constant contact form, mailpoet form, aweber form, cleverreach form, emma form, convertkit form, active campaign form, salesforce form, zoho form, capsule form, insightly form, pipelinedeals form, onepagecrm form
 Requires at least: 5.6
 Tested up to: 6.1.1
-Stable tag: 3.6.16
+Stable tag: 3.6.19
 License: GPLv2 or later
 
 The 100% beginner friendly WordPress form builder. Drag & drop form fields to build beautiful, professional contact forms in minutes.
@@ -302,13 +302,44 @@ This section describes how to install the plugin and get it working.
 5. Beautiful Forms Every Time!
 
 == Upgrade Notice ==
-= 3.6.16 (18 January 2023)
+= 3.6.19 (22 February 2023)
 *Bug Fixes:*
-  * Import buffer class to re-enable download as PDF
-*Other Enhancements:*
-  * Add code coverage reporting
+- Migrate/update jBox library
+- Ensuref language filter results are passed to downstream filters
+- Prevent non-string math error
+
+*Other:*
+- Add version checks for extensions
 
 == Changelog ==
+
+= 3.6.19 (22 February 2023)
+*Bug Fixes:*
+- Migrate/update jBox library
+- Ensure language filter results are passed to downstream filters
+- Prevent non-string math error
+
+*Other:*
+- Add version checks for extensions
+
+= 3.6.18 (16 February 2023)
+*Bug Fixes:*
+- Prevent deprecated warning null preg_match_all
+- Ensure empty form does not throw error on preview
+- Ensure array for currency doesn't throw fatal error
+- Declare previously undeclared properties (PHP 8)
+- Prevent undefined array key error
+- Ensure missing key in recaptcha field doesn't fail
+
+= 3.6.17 (8 February 2023)
+*Bug Fixes:*
+- Ensure HTML injected in label is sanitized
+- Correct typo in date format for option DD/MM/YYYY
+- Ensure GMT offset setting does not prevent submissions page display
+- Prevent deprecated notice on empty merge tag "other"
+- Prevent deprecated notice for jsonSerialize
+- Prevent deprecated notice for passing null value
+
 = 3.6.16 (18 January 2023)
 *Bug Fixes:*
   * Import buffer class to re-enable download as PDF
