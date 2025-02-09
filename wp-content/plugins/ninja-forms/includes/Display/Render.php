@@ -165,7 +165,6 @@ class NF_Display_Render
 
             // TODO: Replace unique field key checks with a refactored model/factory.
             $unique_field_keys = array();
-            $cache_updated = false;
 
             foreach ($form_fields as $field) {
 
@@ -186,25 +185,6 @@ class NF_Display_Render
                 $field_key = $field[ 'settings' ][ 'key' ];
 
                 if( in_array( $field_key, $unique_field_keys ) || '' == $field_key ){
-
-                    // Delete the field.
-                    Ninja_Forms()->request( 'delete-field' )->data( array( 'field_id' => $field_id ) )->dispatch();
-
-                    // Remove the field from cache.
-                    if( $form_cache ) {
-                        if( isset( $form_cache[ 'fields' ] ) ){
-                            foreach( $form_cache[ 'fields' ] as $cached_field_key => $cached_field ){
-                                if( ! isset( $cached_field[ 'id' ] ) ) continue;
-                                if( $field_id != $cached_field[ 'id' ] ) continue;
-
-                                // Flag cache to update.
-                                $cache_updated = true;
-
-                                unset( $form_cache[ 'fields' ][ $cached_field_key ] ); // Remove the field.
-                            }
-                        }
-                    }
-
                     continue; // Skip the duplicate field.
                 }
                 array_push( $unique_field_keys, $field_key ); // Log unique key.
@@ -339,10 +319,6 @@ class NF_Display_Render
                     ) ){
                     array_push( self::$form_uses_helptext, $form_id );
                 }
-            }
-
-            if( $cache_updated ) {
-                WPN_Helper::update_nf_cache( $form_id, $form_cache ); // Update form cache without duplicate fields.
             }
         }
 
@@ -732,9 +708,9 @@ class NF_Display_Render
     public static function localize_iframe( $form_id )
     {
         //Render root div
-        echo "<div id='nf_form_iframe_" . $form_id . "'></div>";
+        echo "<div id='nf_form_iframe_" . (int)$form_id . "'></div>";
         //Enqueue WP element
-       self::enqueue_iframe_scripts( $form_id );
+       static::enqueue_iframe_scripts( $form_id );
 
     }
 
