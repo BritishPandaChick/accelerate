@@ -3,7 +3,7 @@
 Plugin Name: Ninja Forms
 Plugin URI: http://ninjaforms.com/?utm_source=WordPress&utm_medium=readme
 Description: Ninja Forms is a webform builder with unparalleled ease of use and features.
-Version: 3.10.1
+Version: 3.11.1
 Author: Saturday Drive
 Author URI: http://ninjaforms.com/?utm_source=Ninja+Forms+Plugin&utm_medium=Plugins+WP+Dashboard
 Text Domain: ninja-forms
@@ -43,7 +43,7 @@ final class Ninja_Forms
      * @since 3.0
      */
 
-    const VERSION = '3.10.1';
+    const VERSION = '3.11.1';
 
     /**
      * @since 3.4.0
@@ -776,7 +776,8 @@ final class Ninja_Forms
 
     public function plugins_loaded()
     {
-        unload_textdomain('ninja-forms');
+        unload_textdomain('ninja-forms',true);
+        
         load_plugin_textdomain( 'ninja-forms', false, basename( dirname( __FILE__ ) ) . '/lang' );
 
 
@@ -1223,13 +1224,10 @@ register_uninstall_hook( __FILE__, 'ninja_forms_uninstall' );
 
 function ninja_forms_uninstall(){
 
-    if( Ninja_Forms()->get_setting( 'delete_on_uninstall' ) ) {
-        require_once plugin_dir_path(__FILE__) . '/includes/Database/Migrations.php';
-        $migrations = new NF_Database_Migrations();
-        $migrations->nuke(TRUE, TRUE);
-        $migrations->nuke_settings(TRUE, TRUE);
-        $migrations->nuke_deprecated(TRUE, TRUE);
-    }
+    /**
+     *  Nothing to see here.
+     */
+
 }
 
 // Scheduled Action Hook
@@ -1242,11 +1240,7 @@ function nf_optin_update_environment_vars() {
     /**
      * Make sure that we've reported our opt-in.
      */
-    if( get_option( 'ninja_forms_optin_reported', 0 ) ) return;
-
-    Ninja_Forms()->dispatcher()->send( 'optin', array( 'send_email' => 1 ) );
-    // Debounce opt-in dispatch.
-    update_option( 'ninja_forms_optin_reported', 1 );
+    Ninja_Forms()->tracking->report_optin();
 }
 add_action( 'nf_optin_cron', 'nf_optin_update_environment_vars' );
 
